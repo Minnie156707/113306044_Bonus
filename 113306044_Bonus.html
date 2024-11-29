@@ -1,0 +1,86 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-row .form-group {
+            width: 48%;
+        }
+        .picture img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label>input1
+                <input type="text" id="input1" name="input1" placeholder="input1">
+                </label>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="input2">input2</label>
+                    <input type="text" id="input2" name="input2" placeholder="input2">
+                </div>
+                <div class="form-group">
+                    <label for="input3">input3</label>
+                    <input type="text" id="input3" name="input3" placeholder="input3">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input4">input4</label>
+                <input type="text" id="input4" name="input4" placeholder="input4">
+            </div>
+            <div class="form-group">
+                <label for="textarea">textarea</label>
+                <textarea id="textarea" name="textarea">make it not resizable</textarea>
+            </div>
+            <div class="form-group picture">
+                <label for="picture1">picture1</label>
+                <img src="live.jpg" alt="live in the moment." id="picture1">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
